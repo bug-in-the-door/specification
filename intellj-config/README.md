@@ -4,9 +4,13 @@
 
 下文中提供所有设置要求将分为以下几种类型，根据不同类型请进行选择进行相应操作:
 
-1.【强制】: 项目组内必须统一进行设置，不允许有个性化设置 2.【建议】: 文档编写者根据经验建议设置，开发人员可以根据自己的使用习惯选择是否设置
+1. 【强制】: 项目组内必须统一进行设置，不允许有个性化设置
 
-## 2. 代码规范
+2. 【建议】: 文档编写者根据经验建议设置，开发人员可以根据自己的使用习惯选择是否设置
+
+3. 未列出的其它规范因尽量与 **Java 开发手册（泰山版）** 保持一致
+
+## 2. 编程归约
 
 ### 2.1. 【强制】所有代码文件必须采用 UTF-8 格式编码
 
@@ -42,6 +46,16 @@ Settings -> Editor -> Code Style:
 - 持续行缩进为 2
 
 ![设置 HTML, JSON, JSP, JSPX, TS, XML 缩进](./images/set-plain_text.png)
+
+### 2.4. 【强制】设置自动去除未使用的 import 语句
+
+Settings -> General -> AutoImport -> 勾选 `Optimize imports on the fly`
+
+### 2.5. 【强制】避免使用 `import *`
+
+Settings -> Editor -> Code Style -> Java:
+
+![避免使用 import *](./images/no-import-star.jpg)
 
 ## 3. 提升开发效率
 
