@@ -47,6 +47,14 @@ Settings -> Editor -> Code Style:
 
 ![设置 HTML, JSON, JSP, JSPX, TS, XML 缩进](./images/set-plain_text.png)
 
+#### 2.3.3. 设置 XML 注释缩进（不在行首）
+
+Settings -> Editor -> Code Style -> XML -> Code Generation
+
+取消如下两个选项
+
+![设置 XML 注释缩进（不在行首）](./images/xml-config.png)
+
 ### 2.4. 【强制】设置自动去除未使用的 import 语句
 
 Settings -> General -> AutoImport -> 勾选 `Optimize imports on the fly`
@@ -78,9 +86,52 @@ Settings -> Editor -> Inspections -> 搜索 Spelling -> 取消勾选 `Typo`
 
 ![关闭拼写检查](./images/close-spelling.jpg)
 
+### 3.4. 【建议】使用 Live Templates
+
+#### 3.4.1 自定义 Live Templates 示例
+
+> [IDEA 模板 live template](https://www.jianshu.com/p/4bb6ca64aef5)
+>
+> [官方 Live Template 文档](https://www.jetbrains.com/help/idea/settings-live-templates.html)
+
+Settings -> Editor -> Live Templates
+
+1. 新建 Group
+
+   ![新建 Group](./images/templates-group.png)
+
+2. 新建 Live Template
+
+   ![创建 Live Template](./images/create-live-template.jpg)
+
+   > 解释：
+   >
+   > - **Abbreviation**: 缩写
+   > - **Description**: 描述
+   > - **Template text**: 生成的样板文本
+
+   ![创建 Live Template2](./images/create-live-template2.jpg)
+
+   点击 `Edit variables` 并设置 _CLASS_ 对应的表达式
+
+   ![创建 Live Template3](./images/create-live-template3.jpg)
+
+   点击 `Change` 并勾选在 `Java` 中生效
+
+   ![创建 Live Template4](./images/create-live-template4.jpg)
+
+3. 使用
+
+   ![使用 Live Template](./images/use-live-template.jpg)
+
+   ![使用 Live Template2](./images/use-live-template2.jpg)
+
 ## 4. 安装插件
 
 ### 4.1. 【强制】安装 SonarLint
+
+> SonarLint: 代码规范与质量检测
+> Intellj IDEA 快捷键: `Ctrl + Shift + A`
 
 #### 4.1.1. 通过 Plugins 安装
 
@@ -103,3 +154,9 @@ SonarLint 插件有 260 MB+，如果网络不好安装失败可以通过本地�
 下载完成后，通过 Plugins 里的 `Intall Plugin from Disk` 安装
 
 ![从磁盘安装](./images/install-from-disk.jpg)
+
+### 4.2. 【推荐】安装 JRebel
+
+> JRebel: 热部署
+
+[IDEA 配置 JRebel](./IDEA配置JRebel热部署.pdf)
